@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
     }
 
-    public void easyBinding(View view) {
+    public void toEasy(View view) {
         startActivity(new Intent(this, EasyActivity.class));
+    }
+
+    public void toTwoway(View view) {
+        startActivity(new Intent(this, TwowayActivity.class));
     }
 }
