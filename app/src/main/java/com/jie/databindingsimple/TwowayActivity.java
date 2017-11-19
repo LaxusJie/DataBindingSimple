@@ -9,6 +9,11 @@ import android.widget.Toast;
 import com.jie.databindingsimple.databinding.ActivityTwowayBinding;
 import com.jie.databindingsimple.entity.Student;
 
+/**
+ * desc：双向绑定例子
+ * author：haojie
+ * date：2017/11/19
+ */
 public class TwowayActivity extends AppCompatActivity {
 
     @Override

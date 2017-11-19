@@ -8,6 +8,11 @@ import android.view.View;
 
 import com.jie.databindingsimple.databinding.ActivityMainBinding;
 
+/**
+ * desc：主页面
+ * author：haojie
+ * date：2017/11/19
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

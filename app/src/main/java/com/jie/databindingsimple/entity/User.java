@@ -2,7 +2,7 @@ package com.jie.databindingsimple.entity;
 
 /**
  * desc：用户实体
- * author：捷
+ * author：haojie
  * date：2017/11/19
  */
 public class User {

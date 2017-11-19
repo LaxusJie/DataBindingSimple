@@ -5,7 +5,7 @@ import android.databinding.ObservableInt;
 
 /**
  * desc：双向绑定测试实体
- * author：捷
+ * author：haojie
  * date：2017/11/19
  */
 public class Teacher {
