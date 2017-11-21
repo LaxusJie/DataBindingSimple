@@ -22,8 +22,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".EasyActivity" />
-        <activity android:name=".TwowayActivity"/>
+        <activity android:name=".TwowayActivity" />
         <activity android:name=".LayoutActivity" />
+        <activity android:name=".ResActivity" />
+        <activity android:name=".IncludeActivity"></activity>
     </application>
 
 </manifest>

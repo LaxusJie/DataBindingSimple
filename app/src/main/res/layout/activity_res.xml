@@ -1,0 +1,45 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable name="large" type="boolean" />
+        <variable name="firstName" type="String" />
+        <variable name="lastName" type="String" />
+        <variable name="isVisible" type="boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:padding="@{large? @dimen/largePadding : @dimen/smallPadding}"
+            android:text="判断内间距大小" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/nameFormat(firstName, lastName)}"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="@{isVisible ? View.VISIBLE : View.GONE}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否显示出来"
+            android:visibility="@{image.visibility}"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{image.visibility}"/>
+    </LinearLayout>
+</layout>

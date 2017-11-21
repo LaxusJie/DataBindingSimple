@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
-        <variable name="View" type="android.view.View"/>
-        <variable name="StringUtil" type="com.jie.databindingsimple.StringUtil"/>
+        <import type="android.view.View"/>
+        <import type="com.jie.databindingsimple.StringUtil" />
+        <variable name="large" type="boolean" />
         <variable name="user" type="com.jie.databindingsimple.entity.User"/>
         <variable name="student" type="com.jie.databindingsimple.entity.Student"/>
+        <variable name="activity" type="com.jie.databindingsimple.LayoutActivity"/>
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,11 +18,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{student.name}"
-            android:visibility="@{student.boy ? View.VISIBLE : View.INVISIBLE}"/>
+            android:text="@{student.name}"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{StringUtil.reverseString(student.name)}"/>
+            android:text="@{StringUtil.reverseString(student.name)}"
+            android:onClick="@{(view) -> activity.onTextClick(view)}"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="事件监听，请输入文字    "
+            android:onTextChanged= "@{activity::onTextChanged}"
+            android:onClick="@{activity.onTextClick}"/>
     </LinearLayout>
 </layout>

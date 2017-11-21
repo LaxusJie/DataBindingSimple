@@ -32,4 +32,12 @@ public class MainActivity extends AppCompatActivity {
     public void toLayout(View view) {
         startActivity(new Intent(this, LayoutActivity.class));
     }
+
+    public void toRes(View view) {
+        startActivity(new Intent(this, ResActivity.class));
+    }
+
+    public void toInclude(View view) {
+        startActivity(new Intent(this, IncludeActivity.class));
+    }
 }

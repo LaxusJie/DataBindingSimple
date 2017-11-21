@@ -11,7 +11,7 @@ public class StringUtil {
      * @param text
      * @return
      */
-    public static String reverseString(String text) {
+    public static String reverseString(final String text) {
         StringBuffer stringBuffer = new StringBuffer(text);
         return  stringBuffer.reverse().toString();
     }
