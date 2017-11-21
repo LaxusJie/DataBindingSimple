@@ -19,5 +19,11 @@
             android:layout_height="wrap_content"
             android:text="双向绑定"
             android:onClick="toTwoway"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="layout用法"
+            android:onClick="toLayout"/>
     </LinearLayout>
 </layout>

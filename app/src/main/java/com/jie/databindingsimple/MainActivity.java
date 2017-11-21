@@ -28,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void toTwoway(View view) {
         startActivity(new Intent(this, TwowayActivity.class));
     }
+    
+    public void toLayout(View view) {
+        startActivity(new Intent(this, LayoutActivity.class));
+    }
 }

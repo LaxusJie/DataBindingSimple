@@ -13,6 +13,7 @@ import com.jie.databindingsimple.BR;
 public class Student extends BaseObservable {
     private String name;
     private String className;
+    private boolean isBoy;
 
     @Bindable
     public String getName() {
@@ -24,6 +25,11 @@ public class Student extends BaseObservable {
         return className;
     }
 
+    @Bindable
+    public boolean isBoy() {
+        return isBoy;
+    }
+
     public void setName(String name) {
         this.name = name;
         notifyPropertyChanged(BR.name);
@@ -32,5 +38,10 @@ public class Student extends BaseObservable {
     public void setClassName(String className) {
         this.className = className;
         notifyPropertyChanged(BR.className);
+    }
+
+    public void setBoy(boolean boy) {
+        isBoy = boy;
+        notifyPropertyChanged(BR.boy);
     }
 }
