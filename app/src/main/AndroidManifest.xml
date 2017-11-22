@@ -25,7 +25,8 @@
         <activity android:name=".TwowayActivity" />
         <activity android:name=".LayoutActivity" />
         <activity android:name=".ResActivity" />
-        <activity android:name=".IncludeActivity"></activity>
+        <activity android:name=".IncludeActivity" />
+        <activity android:name=".RecyleActivity"></activity>
     </application>
 
 </manifest>

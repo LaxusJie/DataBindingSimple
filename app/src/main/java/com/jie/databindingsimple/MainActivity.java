@@ -40,4 +40,8 @@ public class MainActivity extends AppCompatActivity {
     public void toInclude(View view) {
         startActivity(new Intent(this, IncludeActivity.class));
     }
+
+    public void toRecyle(View view) {
+        startActivity(new Intent(this, RecyleActivity.class));
+    }
 }

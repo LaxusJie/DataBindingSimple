@@ -6,4 +6,5 @@
     <string name="use_layout">layout用法</string>
     <string name="use_resource">resource用法</string>
     <string name="use_include">include用法</string>
+    <string name="use_recyle">列表用法</string>
 </resources>

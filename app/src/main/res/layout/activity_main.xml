@@ -35,5 +35,11 @@
             android:layout_height="wrap_content"
             android:text="@string/use_include"
             android:onClick="toInclude"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/use_recyle"
+            android:onClick="toRecyle"/>
     </LinearLayout>
 </layout>
